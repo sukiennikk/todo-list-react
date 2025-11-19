@@ -2,19 +2,20 @@
 
 This is a simple task management application built with React and styled with CSS. The app allows users to add new tasks, mark them as completed, hide completed tasks, and delete tasks. It demonstrates the use of React functional components, props and modular CSS styling.
 
+The app is designed to help users efficiently manage daily tasks with a clean and intuitive interface.
+
 ## Technologies used:
 
 - React - JavaScript library
 - CSS for styling
 - HTML
 
-The app is designed to help users efficiently manage daily tasks with a clean and intuitive interface.
-
 ## Demo
 
 Watch the Demo here:
 
 https://sukiennikk.github.io/todo-list-react/
+
 
 ##
 
