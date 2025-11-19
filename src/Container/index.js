@@ -2,7 +2,7 @@ import React from "react";
 import "./style.css";
 
 const Container = ({children}) => (
-    <main ClassName="container">
+    <main className="container">
         {children}
     </main>
 );
