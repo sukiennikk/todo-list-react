@@ -14,8 +14,8 @@ const tasks = [
 function App() {
   const [hideDone, setHideDone] = useState(false);
   const toggleHideDone = () => {
-    setHideDone(hideDone = !hideDone);
-  };
+  setHideDone(prevHideDone => !prevHideDone);
+};
   return (
      <Container>
         <Header title="Lista zadań" />
