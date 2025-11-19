@@ -1,16 +1,15 @@
 import React from "react";
 import "./style.css";
 
-const Tasks = (props) => (
+const Tasks = ({ tasks, hideDone, removeTask }) => (
     <ul className="tasksList">
-        {props.tasks.map((task, index) => (
+        {tasks.map((task, index) => (
             <li
                 key={index}
-                className={`tasksList__taskItem${task.done && props.hideDone ? " tasksList__taskItem--hidden" : ""}`}
+                className={`tasksList__taskItem${task.done && hideDone ? " tasksList__taskItem--hidden" : ""}`}
                 >
                 <button 
                     className={`tasksList__taskButton${task.done ? " tasksList__taskButton--done" : ""}`} 
-                    data-index={index}
                 >
                     {task.done ? "✓" : ""}
                 </button>
@@ -19,7 +18,7 @@ const Tasks = (props) => (
                 </span>                
                 <button 
                     className="tasksList__taskButton tasksList__taskButton--remove" 
-                    data-index={index}
+                    onClick={() => removeTask(task.id)}
                 >
                     🗑
                 </button>
