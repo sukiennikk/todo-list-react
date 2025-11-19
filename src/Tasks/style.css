@@ -4,7 +4,6 @@
     margin: 0;
 }
 
-
 .tasksList__taskItem {
     display: grid;
     grid-template-columns: auto 1fr auto;
@@ -12,6 +11,10 @@
     align-items: center;
     padding: 10px;
     border-bottom: 1px solid #ddd;
+}
+
+.tasksList__taskItem--hidden {
+    display: none;
 }
 
 .tasksList__taskButton {
