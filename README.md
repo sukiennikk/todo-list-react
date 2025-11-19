@@ -10,6 +10,11 @@ This is a simple task management application built with React and styled with CS
 
 The app is designed to help users efficiently manage daily tasks with a clean and intuitive interface.
 
+## Demo
+
+Watch the Demo here:
+https://sukiennikk.github.io/todo-list-react/
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ### Available Scripts
