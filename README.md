@@ -13,7 +13,10 @@ The app is designed to help users efficiently manage daily tasks with a clean an
 ## Demo
 
 Watch the Demo here:
+
 https://sukiennikk.github.io/todo-list-react/
+
+##
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
