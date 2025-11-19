@@ -41,6 +41,10 @@
     text-decoration: line-through;
 }
 
+.tasksList__taskContent {
+    flex-grow: 1;
+}
+
 .task-list__buttons {
     display: flex;
     justify-content: flex-end;
