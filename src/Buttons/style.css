@@ -35,10 +35,10 @@
   }
 
   .task-list__button {
-    padding: 8px 16px;
-    font-size: 14px;
+    background: none;
     border: none;
-    border-radius: 4px;
-    background-color: teal;
-    color: #fff;
+    color: #00796b;   /* ciemna zieleń / morski — wybierz kolor */
+    font-size: 16px;
+    cursor: pointer;
+    padding: 4px 6px;
   }
