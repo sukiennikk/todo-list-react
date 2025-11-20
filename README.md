@@ -16,6 +16,8 @@ Watch the Demo here:
 
 https://sukiennikk.github.io/todo-list-react/
 
+<img width="1277" height="600" alt="Zrzut ekranu 2025-11-20 184734" src="https://github.com/user-attachments/assets/855e13a7-3698-4a95-a074-d8e08af479b0" />
+
 
 ##
 
