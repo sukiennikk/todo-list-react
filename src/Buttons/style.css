@@ -8,7 +8,6 @@
 }
 
 .task-list__button:disabled {
-  background-color: #ccc; 
   transition: 0.2s;
   color: #666;         
   cursor: not-allowed;    
@@ -37,7 +36,7 @@
   .task-list__button {
     background: none;
     border: none;
-    color: #00796b;   /* ciemna zieleń / morski — wybierz kolor */
+    color: #00796b;
     font-size: 16px;
     cursor: pointer;
     padding: 4px 6px;
