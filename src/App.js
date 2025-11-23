@@ -37,14 +37,14 @@ const [tasks, setTasks] = useState(() => {
 
       return task;
     }));
-  }
+  };
 
   const setAllDone = () => {
     setTasks(tasks => tasks.map(task => ({
       ...task, 
       done: true,
     })));
-  }
+  };
 
   const addNewTask = (content) => {
   if (!content.trim()) {
