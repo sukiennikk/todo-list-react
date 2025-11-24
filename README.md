@@ -10,13 +10,17 @@ The app is designed to help users efficiently manage daily tasks with a clean an
 - CSS for styling
 - HTML
 
+## Updates
+
+The UI od the app has been optimized, local storage has been applied for a user to save its tasks. See more in Demo!
+
 ## Demo
 
 Watch the Demo here:
 
 https://sukiennikk.github.io/todo-list-react/
 
-<img width="1277" height="600" alt="Zrzut ekranu 2025-11-20 184734" src="https://github.com/user-attachments/assets/855e13a7-3698-4a95-a074-d8e08af479b0" />
+<img width="1124" height="516" alt="Zrzut ekranu 2025-11-24 131321" src="https://github.com/user-attachments/assets/2d739cc3-b51d-4b79-9c35-b0187e1188cc" />
 
 
 ##
