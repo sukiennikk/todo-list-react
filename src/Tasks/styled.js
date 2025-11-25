@@ -21,8 +21,27 @@ export const Item = styled.li`
 
 export const Content = styled.span`
     flex-grow: 1;
-    
+
     ${({done}) => done && css`
     text-decoration: line-through;
+    `}
+`;
+
+export const Button = styled.button`
+    border: none;
+    color: white;
+    width: 30px;
+    height: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    border-radius: 3px;
+
+    ${({toggleDone}) => toggleDone && css`
+        background: #1a7b1e;
+    `}
+    ${({toggleRemove}) => toggleRemove && css`
+        background: #e11;
     `}
 `;
