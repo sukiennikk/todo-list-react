@@ -1,24 +1,27 @@
-import React, { useState } from "react";
-import "./style.css";
+import { useState } from "react";
+import { FormWrapper, Input, Button } from "./styled";
 
-const Form = ({addNewTask}) => {
+const Form = ({ addNewTask }) => {
     const [newTaskContent, setNewTaskContent] = useState("");
+
     const onFormSubmit = (event) => {
         event.preventDefault();
         addNewTask(newTaskContent.trim());
         setNewTaskContent("");
     };
+
     return (
-        <form className="form" onSubmit={onFormSubmit}>
-            <input
-                value={newTaskContent} 
-                className="form__input" 
+        <FormWrapper onSubmit={onFormSubmit}>
+            <Input
+                value={newTaskContent}
                 placeholder="Co jest do zrobienia?"
-                onChange={({target}) => setNewTaskContent(target.value)} 
+                onChange={({ target }) => setNewTaskContent(target.value)}
             />
-            <button className="form__button">Dodaj zadanie</button>
-        </form> 
-            );
-}; 
+            <Button>
+                Dodaj zadanie
+            </Button>
+        </FormWrapper>
+    );
+};
 
 export default Form;
