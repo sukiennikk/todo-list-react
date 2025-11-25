@@ -1,8 +1,9 @@
 import React from "react";
 import "./style.css";
+import { TasksList } from "./styled";
 
 const Tasks = ({ tasks, hideDone, removeTask, toggleTaskDone }) => (
-    <ul className="tasksList">
+    <TasksList>
         {tasks.map((task, index) => (
             <li
                 key={index}
@@ -25,7 +26,7 @@ const Tasks = ({ tasks, hideDone, removeTask, toggleTaskDone }) => (
                 </button>
             </li>
         ))}    
-    </ul>
+    </TasksList>
 );
 
 
