@@ -1,16 +1,3 @@
-.tasksList__taskItem {
-    display: grid;
-    grid-template-columns: auto 1fr auto;
-    grid-gap: 10px;
-    align-items: center;
-    padding: 10px;
-    border-bottom: 1px solid #ddd;
-}
-
-.tasksList__taskItem--hidden {
-    display: none;
-}
-
 .tasksList__taskButton {
     border: none;
     color: white;
@@ -29,14 +16,6 @@
 
 .tasksList__taskButton--done {
     background: #1a7b1e;
-}
-
-.tasksList__taskContent--done {
-    text-decoration: line-through;
-}
-
-.tasksList__taskContent {
-    flex-grow: 1;
 }
 
 .task-list__buttons {
