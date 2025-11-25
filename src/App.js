@@ -2,7 +2,7 @@ import React, { useState, useEffect } from 'react';
 import Form from "./Form";
 import Tasks from "./Tasks";
 import Buttons from "./Buttons";
-import Section from "./Section";
+import Wrapper from "./Section";
 import Header from "./Header";
 import Container from "./Container";
 
@@ -65,11 +65,11 @@ const [tasks, setTasks] = useState(() => {
   return (
      <Container>
         <Header title="Lista zadań" />
-        <Section 
+        <Wrapper 
           title="Dodaj nowe zadanie" 
           body={<Form addNewTask={addNewTask}/>} 
         />
-        <Section 
+        <Wrapper 
         title="Lista zadań"
         body={
         <Tasks 
