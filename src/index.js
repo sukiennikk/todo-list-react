@@ -1,13 +1,17 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 import './index.css';
+import { Provider } from "react-redux";
 import reportWebVitals from './reportWebVitals';
-import App from "./App";
+import TasksPage from "./features/tasks/TasksPage";
+import store from "./store";
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    <App />
+    <Provider store={store}>
+    <TasksPage />
+    </Provider>
   </React.StrictMode>
 );
 
