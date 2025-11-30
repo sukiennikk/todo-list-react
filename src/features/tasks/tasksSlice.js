@@ -1,25 +1,10 @@
 import { createSlice } from "@reduxjs/toolkit";
-
-const loadInitialTasks = () => {
-  try {
-    const saved = localStorage.getItem("tasks");
-    if (!saved) {
-      return [
-        { id: 1, content: "przejść na Reacta", done: false },
-        { id: 2, content: "zjeść obiad", done: true },
-      ];
-    }
-    return JSON.parse(saved);
-  } catch (e) {
-    console.error("Błąd wczytywania z localStorage:", e);
-    return [];
-  }
-};
+import { getTasksFromLocalStorage } from "./tasksLocalStorage";
 
 const tasksSlice = createSlice({
   name: "tasks",
   initialState: {
-    tasks: loadInitialTasks(),
+    tasks: getTasksFromLocalStorage(),
     hideDone: false,
   },
   reducers: {
@@ -44,7 +29,15 @@ const tasksSlice = createSlice({
 
     setAllDone: (state) => {
       state.tasks = state.tasks.map(task => ({ ...task, done: true }));
-    }
+    },
+
+    setTasks: (state, { payload }) => {
+      state.tasks = payload;
+    },
+
+    fetchExampleTasks: (state) => {
+
+    },
   },
 });
 
@@ -54,8 +47,10 @@ export const {
   toggleHideDone,
   toggleTaskDone,
   setAllDone,
+  setTasks,
+  fetchExampleTasks,
 } = tasksSlice.actions;
 
-export const selectTasks = state => state.tasks;
+export const selectTasks = (state) => state.tasks;
 
 export default tasksSlice.reducer;
