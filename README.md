@@ -12,7 +12,7 @@ The app is designed to help users efficiently manage daily tasks with a clean an
 
 ## Updates
 
-The UI od the app has been optimized, local storage has been applied for a user to save its tasks. See more in Demo!
+Functionals optimized with Redux. See more in Demo!
 
 ## Demo
 
