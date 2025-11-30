@@ -7,6 +7,7 @@ The app is designed to help users efficiently manage daily tasks with a clean an
 ## Technologies used:
 
 - React - JavaScript library
+- Redux toolkit
 - CSS for styling
 - HTML
 
