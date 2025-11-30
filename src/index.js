@@ -3,14 +3,14 @@ import ReactDOM from 'react-dom/client';
 import './index.css';
 import { Provider } from "react-redux";
 import reportWebVitals from './reportWebVitals';
-import TasksPage from "./features/tasks/TasksPage";
 import store from "./store";
+import App from './App';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
     <Provider store={store}>
-    <TasksPage />
+    <App />
     </Provider>
   </React.StrictMode>
 );
