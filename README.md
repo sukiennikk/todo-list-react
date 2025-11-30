@@ -8,7 +8,7 @@ The app is designed to help users efficiently manage daily tasks with a clean an
 
 - React - JavaScript library
 - Redux toolkit
-- CSS for styling
+- Styled-components
 - HTML
 
 ## Updates
