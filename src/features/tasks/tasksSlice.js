@@ -13,8 +13,8 @@ const tasksSlice = createSlice({
       state.searchQuery = action.payload;
     },
 
-    addTask: (state, action) => {
-      state.tasks.push(action.payload);
+    addTask: ({ tasks }, { payload: task }) => {
+      tasks.push(task);
     },
 
     removeTask: (state, action) => {
