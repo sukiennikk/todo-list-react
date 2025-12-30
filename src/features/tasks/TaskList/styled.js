@@ -20,11 +20,19 @@ export const Item = styled.li`
 `;
 
 export const Content = styled.span`
-    flex-grow: 1;
+  flex-grow: 1;
+  margin: 0 10px;
+  cursor: pointer;
 
-    ${({done}) => done && css`
-    text-decoration: line-through;
+  ${({ done }) =>
+    done &&
+    css`
+      text-decoration: line-through;
     `}
+
+  &:hover {
+    opacity: 0.7;
+  }
 `;
 
 export const Button = styled.button`

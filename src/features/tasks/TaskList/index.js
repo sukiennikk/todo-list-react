@@ -1,30 +1,31 @@
 import { useSelector, useDispatch } from "react-redux";
 import { List, Item, Content, Button } from "./styled";
-import { selectTasks, toggleTaskDone, removeTask } from "../tasksSlice";
+import { selectFilteredTasks, toggleTaskDone, removeTask } from "../tasksSlice";
 import { useHistory } from "react-router-dom";
 
 const TaskList = () => {
-  const { tasks, hideDone } = useSelector(selectTasks);
+  const tasks = useSelector(selectFilteredTasks);
   const dispatch = useDispatch();
-
-const history = useHistory();
+  const history = useHistory();
 
   return (
     <List>
       {tasks.map((task) => (
-        <Item key={task.id} hidden={task.done && hideDone}>
+        <Item key={task.id}>
           <Button
             toggleDone
             onClick={() => dispatch(toggleTaskDone(task.id))}
           >
             {task.done ? "✓" : ""}
           </Button>
+
           <Content
             done={task.done}
             onClick={() => history.push(`/zadania/${task.id}`)}
           >
-          {task.content}
+            {task.content}
           </Content>
+
           <Button
             toggleRemove
             onClick={() => dispatch(removeTask(task.id))}

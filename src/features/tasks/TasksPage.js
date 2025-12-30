@@ -4,6 +4,7 @@ import Buttons from "./Buttons";
 import Wrapper from "../../common/Section";
 import Header from "../../common/Header";
 import Container from "../../common/Container";
+import Search from "./Search";
 
 function TasksPage() {
   return (
@@ -11,6 +12,8 @@ function TasksPage() {
       <Header title="Lista zadań" />
 
       <Wrapper title="Dodaj nowe zadanie" body={<Form />} />
+
+      <Wrapper title="Wyszukiwarka" body={<Search />} />
 
       <Wrapper
         title="Lista zadań"
