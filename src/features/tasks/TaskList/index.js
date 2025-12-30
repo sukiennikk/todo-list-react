@@ -1,10 +1,13 @@
 import { useSelector, useDispatch } from "react-redux";
 import { List, Item, Content, Button } from "./styled";
 import { selectTasks, toggleTaskDone, removeTask } from "../tasksSlice";
+import { useHistory } from "react-router-dom";
 
 const TaskList = () => {
   const { tasks, hideDone } = useSelector(selectTasks);
   const dispatch = useDispatch();
+
+const history = useHistory();
 
   return (
     <List>
@@ -16,9 +19,12 @@ const TaskList = () => {
           >
             {task.done ? "✓" : ""}
           </Button>
-
-          <Content done={task.done}>{task.content}</Content>
-
+          <Content
+            done={task.done}
+            onClick={() => history.push(`/zadania/${task.id}`)}
+          >
+          {task.content}
+          </Content>
           <Button
             toggleRemove
             onClick={() => dispatch(removeTask(task.id))}
