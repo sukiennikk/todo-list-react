@@ -22,7 +22,7 @@ export const Input = styled.input`
 export const Button = styled.button`
   border: 0;
   padding: 10px;
-  border-radius: 4px;
+  border-radius: 0px;
   margin-left: 20px;
   background: teal;
   color: white;

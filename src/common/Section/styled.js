@@ -3,7 +3,7 @@ import styled from "styled-components";
 export const Wrapper = styled.section`
     background: white;
     box-shadow: 0 0 5px #ddd;
-    border-radius: 10px; 
+    border-radius: 0px; 
     overflow: hidden;
     margin: 20px 0;
 `;
