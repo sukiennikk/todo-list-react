@@ -17,12 +17,11 @@ Search bar and tasks details page added! See more in demo.
 
 ## Demo
 
+<img width="1439" height="707" alt="Zrzut ekranu 2025-12-31 o 00 57 32" src="https://github.com/user-attachments/assets/fc56d0f4-2058-4aad-9fac-8a2206f3091b" />
+
 Watch the Demo here:
 
 https://sukiennikk.github.io/todo-list-react/
-
-<img width="1099" height="472" alt="Zrzut ekranu 2025-11-30 o 14 25 42" src="https://github.com/user-attachments/assets/a7b2e51e-19da-4998-a249-43ef1b69f586" />
-
 
 ##
 
