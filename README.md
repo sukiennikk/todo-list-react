@@ -13,7 +13,7 @@ The app is designed to help users efficiently manage daily tasks with a clean an
 
 ## Updates
 
-Search bar and tasks details page added! See more in demo.
+Search bar, author page and tasks details page added! See more in demo.
 
 ## Demo
 
